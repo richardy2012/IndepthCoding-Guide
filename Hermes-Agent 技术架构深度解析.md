@@ -50,7 +50,7 @@ mindmap
 Hermes-Agent 的命名来源于希腊神话中的**信使之神** —— 穿梭于众神与凡人之间，传递信息且记忆一切。
 
 ```mermaid
-radar
+radar-beta
   title Hermes 核心价值雷达图
   axis ["记忆持久化", "平台中立性", "工具扩展性", "自进化能力", "部署灵活性"]
   
@@ -298,7 +298,7 @@ flowchart LR
 ```mermaid
 flowchart TB
   subgraph 启动流程
-    START[应用启动] --> DISCOVER[_discover_tools()]
+    START[应用启动] --> DISCOVER[_discover_tools]
     DISCOVER --> IMPORT1[import file_tools]
     DISCOVER --> IMPORT2[import web_tools]
     DISCOVER --> IMPORT3[import terminal_tool]
@@ -480,7 +480,7 @@ sequenceDiagram
   MM-->>A: 完整记忆上下文
   
   A->>A: 注入到系统提示
-  A->>A: &lt;memory-context&gt;...&lt;/memory-context&gt;
+  A->>A: "<memory-context>...</memory-context>"
 ```
 
 ## 3.3 上下文压缩引擎

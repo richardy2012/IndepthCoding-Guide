@@ -234,7 +234,7 @@ flowchart TB
   B -->|Cron 定时任务 | E[每次运行新会话]
   B -->|Webhook | F[每 Hook 独立会话]
 
-  C -->|main (默认) | G[所有 DM 共享一个会话]
+  C -->|main | G[所有 DM 共享一个会话]
   C -->|per-peer | H[按发送者隔离]
   C -->|per-channel-peer | I[按渠道 + 发送者隔离 ★]
   C -->|per-account-channel-peer | J[按账号 + 渠道 + 发送者隔离]
@@ -357,7 +357,7 @@ flowchart TB
 
   P1 --> P2 --> P3 --> P4 --> P5 --> P6 --> P7 --> P8 --> P9 --> P10
   P10 -->|tool_use| P11 --> P12 --> P13 --> P14
-  P10 -->|end_turn| P15 --> P16 --> P17 --> P18 --> [*]
+  P10 -->|end_turn| P15 --> P16 --> P17 --> P18 --> *
 ```
 
 ### 序列化：为什么同一会话不能并发运行？

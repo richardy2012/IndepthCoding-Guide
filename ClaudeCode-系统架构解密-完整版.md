@@ -4,7 +4,7 @@
 
 > **首席系统架构师视角 · 源码级深度分析**
 >
-> 项目来源：E:\github-trending\Claude-Code-Compiled
+> 项目来源：Claude-Code-Compiled
 > 项目规模：~1,900 TypeScript 文件 · 574 依赖包 · 512K+ 行代码
 > 技术栈：TypeScript + Bun + React Ink + Anthropic API + MCP Protocol
 
